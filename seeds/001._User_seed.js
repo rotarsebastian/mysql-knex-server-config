@@ -2,7 +2,7 @@
 exports.seed = knex => {
   // Deletes ALL existing entries
   const users = [
-    { username: 'admin', first_name: 'A', last_name: 'AA', password: 'pass1', 
+    { username: 'admin', first_name: 'A', last_name: 'AA', password: '$2b$10$SK4aBWxKHRDwL3d9h/.tDe.83resj6Z2B35iSQQ6RppmvTE7rFSnW', // -> password
       address_1: 'Street 1, Cph', 
       address_2: 'Street 2, Cph',
       postal_code: '2100',

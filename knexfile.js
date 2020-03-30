@@ -1,4 +1,5 @@
 const { database, username, password } = require('./config/dbcredentials');
+const { knexSnakeCaseMappers } = require('objection');
 
 module.exports = {
 
@@ -9,6 +10,8 @@ module.exports = {
       user: username,
       password: password,
     }
-  }
+  },
+
+  ...knexSnakeCaseMappers()
   
 };
